@@ -1,7 +1,7 @@
 # kmod-keyfun
 A loadable linux kernel module for autocompleting and blacklisting certain words system wide. Tested on Linux 5.4.0 with a PS/2 laptop keyboard. For other setups (especially, USB keyboards), your mileage may vary. 
 
-# whitelisted words
+## whitelisted words
 In this context, whitelisting words implies autocompletion IFF a certain number of initial characters of a whitelisted word is typed. For example: 
 
 ```
@@ -19,6 +19,8 @@ In this context, whitelisting words implies autocompletion IFF a certain number 
     keyboard types letter:  c
 ```
 
-# blacklisting words
+## blacklisting words
 You can blacklist words. If a person types a blacklisted word, the kernel will kill Xorg (i.e. window manager will get restarted). If this incident happens `STRIKE_NUM` times, the kernel will commit suicide by triple faulting and your machine will reset.
 `Warning:` This is as if killing power to your computer, so data corruption may occur xD. 
+
+## merry christmas
