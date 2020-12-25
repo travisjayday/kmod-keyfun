@@ -23,4 +23,19 @@ In this context, whitelisting words implies autocompletion IFF a certain number 
 You can blacklist words. If a person types a blacklisted word, the kernel will kill Xorg (i.e. window manager will get restarted). If this incident happens `STRIKE_NUM` times, the kernel will commit suicide by triple faulting and your machine will reset.
 `Warning:` This is as if killing power to your computer, so data corruption may occur xD. 
 
+## installation instructions
+First run `configure.sh` to install build dependencies.
+```
+chmod +x configure.sh
+./configure.sh
+``` 
+Next run `make` to compile against your kernel, and `make install` to load the module.
+```
+`make`
+`make install`
+```
+Next: Profit. 
+
+Remember: Type blacklisted words to kill your system, type whitelisted words to autocomplete. 
+
 ## merry christmas
