@@ -31,8 +31,8 @@ chmod +x configure.sh
 ``` 
 Next run `make` to compile against your kernel, and `make install` to load the module.
 ```
-`make`
-`make install`
+make
+make install
 ```
 Next: Profit. 
 
